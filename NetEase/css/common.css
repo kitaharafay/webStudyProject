@@ -1,0 +1,48 @@
+/*通用样式*/
+body, ul, li, p, h1, h2, h3, h4, a {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 微软雅黑;
+    line-height: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333333;
+}
+
+.center {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.scale-image img {
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+.scale-image img:hover {
+    transform: scale(1.1);
+}
+
