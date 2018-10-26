@@ -146,9 +146,13 @@
 }
 
 /*---------- banner ----------*/
+#banner {
+    padding-top: 0;
+}
 #banner .carousel {
     position: relative;
     height: 420px;
+    overflow: hidden;
 }
 
 #banner .carousel-inner {
@@ -181,9 +185,11 @@
     cursor: pointer;
     z-index: 2;
 }
-
+#banner .btn-prev {
+    left: 15%;
+}
 #banner .btn-next {
-    right: 0;
+    right: 15%;
 }
 
 #banner .btn-prev:hover,
