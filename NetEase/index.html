@@ -2,112 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>网易严选</title>
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <title>NetEase</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!--顶部导航-->
-<header id="header">
-    <div class="header center clear-fix">
-        <div class="left">
-            <a href="#">好的生活，没那么贵</a>
-        </div>
-        <div class="right">
-            <ul class="menu">
-                <li><a href="#">登录</a></li>
-                <li><a href="#">注册</a></li>
-                <li><a href="#">我的订单</a></li>
-                <li><a href="#">会员</a></li>
-                <li><a href="#">甄选家</a></li>
-                <li><a href="#">企业采购</a></li>
-                <li>
-                    <a class="service" href="#">
-                        <span>客户服务</span>
-                        <i class="icon-client"></i>
-                    </a></li>
-                <li>
-                    <a href="#">
-                        <i class="icon-phone"></i>
-                        <span>APP</span>
-                    </a>
+
+<!--banner-->
+<section id="banner">
+    <!--[Component] Carousel-->
+    <div id="carousel-banner" class="carousel center">
+        <div class="carousel-inner">
+            <ul class="carouselImgCon">
+                <!--carouselItem-->
+                <li class="item" style="display: block; opacity: 1">
+                    <a href="#"><img src="images/banner/banner-1.jpg"></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/banner/banner-2.jpg"></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/banner/banner-3.jpg"></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/banner/banner-4.jpg"></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/banner/banner-5.png"></a>
                 </li>
             </ul>
         </div>
-    </div>
-</header>
-
-<!--导航-->
-<nav id="nav">
-    <div class="logo">
-        <a href="#">
-            <img src="">
-        </a>
-    </div>
-    <div class="search-box">
-        <input type="text" class="search-text">
-        <span class="search-btn"></span>
-        <div class="market">
-            <img>
-            <i></i>
-        </div>
-    </div>
-    <div class="sub-nav center">
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">居家</a></li>
-            <li><a href="#">鞋包配饰</a></li>
-            <li><a href="#">服装</a></li>
-            <li><a href="#">电器</a></li>
-            <li><a href="#">洗护</a></li>
-            <li><a href="#">饮食</a></li>
-            <li><a href="#">餐厨</a></li>
-            <li><a href="#">婴童</a></li>
-            <li><a href="#">文体</a></li>
-            <li><a href="#">特色区</a></li>
-            <li><a href="#">为你严选</a></li>
-            <li><a href="#">众筹</a></li>
-        </ul>
-    </div>
-</nav>
-<!--banner 巨幕-->
-<section id="banner">
-    <div class="banner" id="carousel-banner">
-        <div class="carousel">
-            <ul class="content">
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-1.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-2.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-3.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-4.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-5.png">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-6.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-7.jpg">
-                </a></li>
-                <li class="banner-pic"><a href="#">
-                    <img src="images/banner/banner-8.jpg">
-                </a></li>
-            </ul>
-        </div>
-        <div class="prev"><span></span></div>
-        <div class="next"><span></span></div>
+        <!--btn-control-->
+        <div class="btn-prev"><span></span></div>
+        <div class="btn-next"><span></span></div>
+        <!--point-->
         <div class="point">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="active"></span>
             <span></span>
             <span></span>
             <span></span>
@@ -115,53 +45,48 @@
         </div>
     </div>
 </section>
-<!--manufacturer 制造商推荐-->
-<section id="manufacturer-list">
-    <div class="manufacturer center">
+
+<!--品牌制造商-->
+<section id="manufacturer">
+    <div class="center">
+        <!--[Component] common-header-->
         <div class="common-header clear-fix">
-            <div class="left">
-                <h3 class="caption"><a href="#">品牌制造商</a></h3>
-                <span>工厂直达消费者，剔除品牌溢价</span>
-            </div>
-            <div class="right">
-                <a href="#">更多制造商 &rsaquo;</a>
-            </div>
+            <h3 class="caption left"><a href="#">品牌制造商</a></h3>
+            <a href="#" class="more fz-14 right">更多制造商></a>
+            <span class="detail fz-14 left">工厂直达消费者，剔除品牌溢价</span>
         </div>
-        <div class="clear-fix">
-            <div class="image-box left">
-                <div class="content">
-                    <h3 class="caption">海外制造商</h3>
-                    <span class="price">9.9元起</span>
-                </div>
-                <a class="scale-image">
+        <div class="content clear-fix">
+            <!--box-->
+            <div class="box left">
+                <h3 class="caption">海外制造商</h3>
+                <span class="price">9.9元起</span>
+                <a href="#" class="scale-image">
                     <img src="http://yanxuan.nosdn.127.net/802ff06dd3ef161db046eeb8db6cb4be.jpg">
                 </a>
             </div>
-            <div class="image-box left">
-                <div class="content">
-                    <h3 class="caption">CK制造商</h3>
-                    <span class="price">25元起</span>
-                </div>
-                <a class="scale-image">
+            <!--box-->
+            <div class="box left">
+                <h3 class="caption">CK制造商</h3>
+                <span class="price">25元起</span>
+                <a href="#" class="scale-image">
                     <img src="http://yanxuan.nosdn.127.net/b72c6486bc681f7b0dcb87d9af0ab1bb.png">
                 </a>
             </div>
-            <div class="image-box left">
-                <div class="image-box-s">
-                    <div class="content">
-                        <h3 class="caption">CK制造商</h3>
-                        <span class="price">25元起</span>
-                    </div>
-                    <a class="scale-image">
+            <!--box-->
+            <div class="box left">
+                <!--box-sm-->
+                <div class="box-sm">
+                    <h3 class="caption">新秀丽制造商</h3>
+                    <span class="price">34.9元起</span>
+                    <a href="#" class="scale-image">
                         <img src="http://yanxuan.nosdn.127.net/957c8d117473d103b52ff694f372a346.png">
                     </a>
                 </div>
-                <div class="image-box-s">
-                    <div class="content">
-                        <h3 class="caption">CK制造商</h3>
-                        <span class="price">25元起</span>
-                    </div>
-                    <a class="scale-image">
+                <!--box-sm-->
+                <div class="box-sm">
+                    <h3 class="caption">MUJI制造商</h3>
+                    <span class="price">39.9元起</span>
+                    <a href="#" class="scale-image">
                         <img src="http://yanxuan.nosdn.127.net/574cea67f235598950acdbae4b5bdd5b.jpg">
                     </a>
                 </div>
@@ -169,189 +94,195 @@
         </div>
     </div>
 </section>
-<!--new  新品推荐-->
+
+<!--新品首发-->
 <section id="new">
-    <div class="new center">
-        <div class="common-header">
-            <div class="left">
-                <h3 class="caption"><a href="#">新品首发</a></h3>
-                <span>为你寻觅世间好物</span>
-            </div>
-            <div class="right">
-                <a href="#">更多新品 &rsaquo;</a>
-            </div>
+    <div class="center">
+        <!--[Component] common-header-->
+        <div class="common-header clear-fix">
+            <h3 class="caption left"><a href="#">新品首发</a></h3>
+            <a href="#" class="more fz-14 right">更多新品></a>
+            <span class="detail fz-14 left">为你寻觅世间好物</span>
         </div>
-        <div id="carousel-new">
-            <div class="carousel">
+        <!--[Component] Carousel-->
+        <div id="carousel-new" class="carousel">
+            <div class="carousel-inner">
                 <ul class="carouselImgCon">
+                    <!--carouselItem-->
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="image">
                             <img src="https://yanxuan.nosdn.127.net/f8a1351045e3a4848b81c3036d229c1c.png">
                             <img src="https://yanxuan.nosdn.127.net/6b86023ce42d0fcc4536e0115344d702.jpg">
                         </a>
-                        <div class="content">
-                            <p class="caption">网易只能低压海盐热敷腰带</p>
-                            <span>¥199</span>
-                        </div>
+                        <div class="tag"><span class="tag-danger">今日特价</span></div>
+                        <h3 class="caption">网易智造低压海盐热敷腰带</h3>
+                        <div class="price"><span class="now">¥199</span><span class="before">¥599</span></div>
                     </li>
                     <li class="item">
-                        <a href="#">
-                            <img src="https://yanxuan.nosdn.127.net/f8a1351045e3a4848b81c3036d229c1c.png">
-                            <img src="https://yanxuan.nosdn.127.net/6b86023ce42d0fcc4536e0115344d702.jpg">
+                        <a href="#" class="image">
+                            <img src="https://yanxuan.nosdn.127.net/cbbdd7c5622a0eaab31e42247909c959.png?">
+                            <img src="https://yanxuan.nosdn.127.net/c0c46db2900faea56a786086ecdec95f.jpg?">
                         </a>
-                        <div class="content">
-                            <p class="caption">网易只能低压海盐热敷腰带</p>
-                            <span>¥199</span>
-                        </div>
+                        <div class="tag"><span class="tag-danger">今日特价</span></div>
+                        <h3 class="caption">网易智造低压海盐热敷腰带</h3>
+                        <div class="price"><span class="now">¥199</span><span class="before">¥599</span></div>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="image">
                             <img src="https://yanxuan.nosdn.127.net/f8a1351045e3a4848b81c3036d229c1c.png">
                             <img src="https://yanxuan.nosdn.127.net/6b86023ce42d0fcc4536e0115344d702.jpg">
                         </a>
-                        <div class="content">
-                            <p class="caption">网易只能低压海盐热敷腰带</p>
-                            <span>¥199</span>
-                        </div>
+                        <div class="tag"><span class="tag-danger">今日特价</span></div>
+                        <h3 class="caption">网易智造低压海盐热敷腰带</h3>
+                        <div class="price"><span class="now">¥199</span><span class="before">¥599</span></div>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="image">
                             <img src="https://yanxuan.nosdn.127.net/f8a1351045e3a4848b81c3036d229c1c.png">
                             <img src="https://yanxuan.nosdn.127.net/6b86023ce42d0fcc4536e0115344d702.jpg">
                         </a>
-                        <div class="content">
-                            <p class="caption">网易只能低压海盐热敷腰带</p>
-                            <span>¥199</span>
-                        </div>
+                        <div class="tag"><span class="tag-danger">今日特价</span></div>
+                        <h3 class="caption">网易智造低压海盐热敷腰带</h3>
+                        <div class="price"><span class="now">¥199</span><span class="before">¥599</span></div>
                     </li>
                 </ul>
             </div>
-            <div class="prev"><span></span></div>
-            <div class="next"><span></span></div>
+            <!--btn-control-->
+            <div class="btn-prev"><span></span></div>
+            <div class="btn-next"><span></span></div>
         </div>
     </div>
 </section>
-<!--show 人气推荐-->
+
+<!--人气推荐-->
 <section id="show">
-    <div class="show center">
-        <div class="common-header">
-            <div class="left">
-                <h3 class="caption"><a href="#">人气推荐</a></h3>
-                <ul class="tab">
-                    <li class="active"><a href="#">编辑推荐</a></li>
-                    <li><a href="#">热销总榜</a></li>
-                </ul>
-            </div>
-            <div class="right">
-                <a href="#">更多推荐 &rsaquo;</a>
-            </div>
+    <div class="center">
+        <div class="common-header clear-fix">
+            <!--标题-->
+            <h3 class="caption left"><a href="#">人气推荐</a></h3>
+            <!--更多推荐 固定格式按钮-->
+            <a href="#" class="more fz-14 right">更多推荐></a>
+            <!--选项卡-->
+            <ul class="tab fz-14 left">
+                <li>编辑推荐</li>
+                <li>热销总榜</li>
+            </ul>
         </div>
         <div class="content clear-fix">
-            <div class="big-img left">
-                <div class="img-box">
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/52b9ee8f296cfd5f8157ac97c0874430.png?quality=95&thumbnail=320x320&imageView">
-                    </a>
+            <div class="box-lg left">
+                <div>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/52b9ee8f296cfd5f8157ac97c0874430.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price">
-                        <span>¥1304.1</span>
-                    </p>
-                </div>
-            </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/6ffb12e2b5871a0c8b65b473bf2b9d92.png?quality=95&thumbnail=180y180&imageView">
-                    </a>
-                </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-danger">严选明星日</span><span class="tag-danger">满赠</span></div>
+                    <div class="caption"><a href="#">升级款95%白鹅绒秋冬加厚羽绒被</a></div>
+                    <div class="price"><span class="new">¥919</span><span class="old">¥1149</span></div>
                 </div>
             </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?quality=95&thumbnail=180y180&imageView">
-                    </a>
+            <div class="box-sm left">
+                <div>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/362a8249b48d91d99604680b5471b507.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
-                </div>
-            </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/9a112528eec77ce5789378758b65bcba.png?quality=95&thumbnail=180y180&imageView">
-                    </a>
-                </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-warning">爆品</span><span class="tag-danger">三石福利价</span></div>
+                    <div class="caption"><a href="#">网易智造3D揉捏按摩肩带</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
                 </div>
             </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/73a065d6fc8c32197b54421808c54788.png?quality=95&thumbnail=180y180&imageView">
-                    </a>
+            <div class="box-sm left">
+                <div>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/576e610c3fa88421a4c20e49f518770b.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
-                </div>
-            </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/de5d87c7cb0f5f0d92a3e5d52019b55e.png?quality=95&thumbnail=180y180&imageView">
-                    </a>
-                </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-danger">限时购</span><span class="tag-danger">加价购</span></div>
+                    <div class="caption"><a href="#">阳澄湖大闸蟹 提货券（券面价格1298）</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
                 </div>
             </div>
-            <div class="small-img left">
-                <div class="img-box">
-                    <span>5色可选</span>
-                    <a class="scale-image">
-                        <img src="https://yanxuan.nosdn.127.net/a77fb86ea742720fa25bd98cc1e5c112.png?quality=95&thumbnail=180y180&imageView">
-                    </a>
+            <div class="box-sm left">
+                <div>
+                    <!--tag 可选元素 -->
+                    <span class="tag">9色可选</span>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg?">
+                        </a>
+                    </div>
                 </div>
-                <div class="content">
-                    <p class="tag"><span class="limit">限时购</span></p>
-                    <h4>升级款双宫蚕丝被子 子母被</h4>
-                    <p class="price"><span>¥1304.1</span><span>¥1449</span></p>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-warning">爆品</span><span class="tag-danger">严选明星日</span><span class="tag-danger">满赠</span></div>
+                    <div class="caption"><a href="#">全棉针织条纹四件套 新款</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
+                </div>
+            </div>
+            <div class="box-sm left">
+                <div>
+                    <!--tag 可选元素-->
+                    <span class="tag">5色可选</span>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/fe4e59525626df83d3875e45a1ad05fc.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-danger">限时购</span></div>
+                    <div class="caption"><a href="#">20寸 纯PC“铝框”（非全铝）登机箱</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
+                </div>
+            </div>
+            <div class="box-sm left">
+                <div>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/b532f2f441572242333f6c5b92fc9f10.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-danger">加价购</span></div>
+                    <div class="caption"><a href="#">浓缩即食燕窝 70克*3瓶 99%</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
+                </div>
+            </div>
+            <div class="box-sm left">
+                <div>
+                    <div class="image-box">
+                        <a href="#" class="scale-image">
+                            <img src="https://yanxuan.nosdn.127.net/73a065d6fc8c32197b54421808c54788.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="tag"><span class="tag-warning">爆品</span></div>
+                    <div class="caption"><a href="#">智能马桶盖</a></div>
+                    <div class="price"><span class="new">¥385</span><span class="old">¥449</span></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--limit 限时购-->
+
+<!--限时购-->
 <section id="limit">
     <div class="limit center">
         <div class="common-header clear-fix">
-            <div class="left">
-                <h3 class="caption"><a href="#">限时购</a></h3>
-            </div>
-            <div class="right">
-                <a href="#">更多抢购 &rsaquo;</a>
-            </div>
+            <!--标题-->
+            <h3 class="caption left"><a href="#">限时购</a></h3>
+            <!--更多推荐 固定格式按钮-->
+            <a href="#" class="more fz-14 right">更多抢购></a>
         </div>
         <div class="clear-fix">
             <div class="time left">
@@ -362,87 +293,85 @@
                 <div class="search-all">查看全部 ></div>
             </div>
             <div class="time-box left">
-                <div class="image-box left">
+                <div class="image-box">
                     <a class="scale-image" href="#">
                         <img src="https://yanxuan.nosdn.127.net/6227b2ac3aca377d3f32617ea65c5510.png?imageView&thumbnail=180x180&quality=95">
                     </a>
                 </div>
-                <div class="content left">
-                    <p class="caption"><a href="#">素色便携洗漱包</a></p>
-                    <p class="detail">超薄材质，精准记录</p>
+                <div class="content">
+                    <div class="caption"><a href="#">素色便携洗漱包</a></div>
+                    <span class="detail">超薄材质，精准记录</span>
                     <div class="progress">
                         <div class="progress-bar"><span></span></div>
                         <span class="last">还剩397件</span>
                     </div>
-                    <p class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></p>
+                    <div class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></div>
                     <div class="buy">立即抢购</div>
                 </div>
             </div>
             <div class="time-box left">
-                <div class="image-box left">
+                <div class="image-box">
                     <a class="scale-image" href="#">
-                        <img src="https://yanxuan.nosdn.127.net/e216153c4c420a6bfaa754e6220981cd.png?imageView&thumbnail=180x180&quality=95">
+                        <img src="https://yanxuan.nosdn.127.net/6227b2ac3aca377d3f32617ea65c5510.png?imageView&thumbnail=180x180&quality=95">
                     </a>
                 </div>
-                <div class="content left">
-                    <p class="caption"><a href="#">素色便携洗漱包</a></p>
-                    <p class="detail">超薄材质，精准记录</p>
+                <div class="content">
+                    <div class="caption"><a href="#">素色便携洗漱包</a></div>
+                    <span class="detail">超薄材质，精准记录</span>
                     <div class="progress">
                         <div class="progress-bar"><span></span></div>
                         <span class="last">还剩397件</span>
                     </div>
-                    <p class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></p>
+                    <div class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></div>
                     <div class="buy">立即抢购</div>
                 </div>
             </div>
             <div class="time-box left">
-                <div class="image-box left">
+                <div class="image-box">
                     <a class="scale-image" href="#">
-                        <img src="https://yanxuan.nosdn.127.net/84ab6f0bd8287a5594270f0c3561a77f.png?imageView&thumbnail=180x180&quality=95">
+                        <img src="https://yanxuan.nosdn.127.net/6227b2ac3aca377d3f32617ea65c5510.png?imageView&thumbnail=180x180&quality=95">
                     </a>
                 </div>
-                <div class="content left">
-                    <p class="caption"><a href="#">素色便携洗漱包</a></p>
-                    <p class="detail">超薄材质，精准记录</p>
+                <div class="content">
+                    <div class="caption"><a href="#">素色便携洗漱包</a></div>
+                    <span class="detail">超薄材质，精准记录</span>
                     <div class="progress">
                         <div class="progress-bar"><span></span></div>
                         <span class="last">还剩397件</span>
                     </div>
-                    <p class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></p>
+                    <div class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></div>
                     <div class="buy">立即抢购</div>
                 </div>
             </div>
             <div class="time-box left">
-                <div class="image-box left">
+                <div class="image-box">
                     <a class="scale-image" href="#">
-                        <img src="https://yanxuan.nosdn.127.net/75a4bc71c2dc845aa3f98fefa7d5014c.png?imageView&thumbnail=180x180&quality=95">
+                        <img src="https://yanxuan.nosdn.127.net/6227b2ac3aca377d3f32617ea65c5510.png?imageView&thumbnail=180x180&quality=95">
                     </a>
                 </div>
-                <div class="content left">
-                    <p class="caption"><a href="#">素色便携洗漱包</a></p>
-                    <p class="detail">超薄材质，精准记录</p>
+                <div class="content">
+                    <div class="caption"><a href="#">素色便携洗漱包</a></div>
+                    <span class="detail">超薄材质，精准记录</span>
                     <div class="progress">
                         <div class="progress-bar"><span></span></div>
                         <span class="last">还剩397件</span>
                     </div>
-                    <p class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></p>
+                    <div class="price"><span>限时价</span><span>¥</span><span>102.7</span><span>¥129</span></div>
                     <div class="buy">立即抢购</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!--saleCenter 福利社-->
 <section id="sale-center">
     <div class="sale-center center">
         <div class="common-header">
-            <div class="left">
-                <h3 class="caption"><a href="#">福利社</a></h3>
-                <!--<span>工厂直达消费者，剔除品牌溢价</span>-->
-            </div>
-            <div class="right">
-                <a href="#">查看全部福利 &rsaquo;</a>
-            </div>
+            <!--标题-->
+            <h3 class="caption left"><a href="#">福利社</a></h3>
+            <!--更多推荐 固定格式按钮-->
+            <a href="#" class="more fz-14 right">查看全部福利></a>
         </div>
         <div class="clear-fix">
             <div id="carousel-sale" class="left">
@@ -592,19 +521,18 @@
         </div>
     </div>
 </section>
+
 <!--family 居家-->
 <section>
     <div class="common-state center">
         <div class="common-header">
-            <div class="left">
-                <h3 class="caption"><a href="#">居家</a></h3>
-            </div>
-            <div class="right">
-                <div class="address">
-                    <p><a href="#">床品件套</a>/<a>背枕</a>/<a href="#">家具</a>/<a href="#">灯具</a>/<a href="#">收纳</a>/<a
-                            href="#">布艺软装</a></p>
-                </div>
-                <a href="#">查看更多 &rsaquo;</a>
+            <!--标题-->
+            <h3 class="caption left"><a href="#">居家</a></h3>
+            <!--更多推荐 固定格式按钮-->
+            <a href="#" class="more fz-14 right">更多推荐></a>
+            <!--面包屑-->
+            <div class="breadcrumb fz-14 right">
+                <a href="#">纸品湿巾</a>/<a href="#">纸品湿巾</a>/<a href="#">美妆</a>
             </div>
         </div>
         <div class="jumbotron">
@@ -647,69 +575,23 @@
         </div>
     </div>
 </section>
-<!--鞋包配饰-->
-<section></section>
-<!--服装-->
-<section></section>
-<!--电器-->
-<section></section>
-<!--洗护-->
-<section></section>
-<!--饮食-->
-<section></section>
-<!--餐厨-->
-<section></section>
-<!--婴童-->
-<section></section>
-<!--文体-->
-<section></section>
-<!--特色区-->
-<section></section>
-<!--甄选家-->s
-<section></section>
-<!--say 大家都在说-->
-<section></section>
-<!--底部-->
-<footer id="footer">
-    <div class="footer center">
-        <div class="footer-box">
-            <p>客户服务</p>
-            <div>
-                <div><span></span>
-                    <p>在线客服</p></div>
-                <div><span></span>
-                    <p>用户反馈</p></div>
-            </div>
-        </div>
-        <div class="footer-box">
-            <p>何为严选</p>
-            <div>
-                <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
-            </div>
-            <div>关注我们: <span class="QQ"></span><span class="weixin"></span><span class="xinlang"></span></div>
-        </div>
-        <div class="footer-box">
-            <p>扫码下载严选APP</p>
-            <div>
-                <span></span>
-                <p>下载领1000元新人礼包</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<section id="statement">
-    <div class="center">
-        <div class="state" >
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p><a href="#">关于我们</a>|<a href="#">帮助中心</a>|<a href="#">售后服务</a>|<a href="#">配送验收</a>|<a href="#">企业采购</a>|<a href="#">开放平台</a>|<a href="#">搜索推荐</a>|<a href="#">友情链接</a>|</p>
-        <p>网易公司版权所有 © 1997-2018   食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</p>
-        <a href="#"><span></span></a>
-    </div>
-</section>
-<!--侧边固定导航-->
-<section></section>
-</body>
-</html>
+
+<!--<section>-->
+    <!--<div class="center">-->
+        <!--<div class="common-header clear-fix">-->
+            <!--&lt;!&ndash;标题&ndash;&gt;-->
+            <!--<h3 class="caption left"><a href="#">人气推荐</a></h3>-->
+            <!--&lt;!&ndash;更多推荐 固定格式按钮&ndash;&gt;-->
+            <!--<a href="#" class="more fz-14 right">更多推荐></a>-->
+            <!--&lt;!&ndash;选项卡&ndash;&gt;-->
+            <!--<ul class="tab fz-14 left">-->
+                <!--<li>编辑推荐</li>-->
+                <!--<li>热销总榜</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;面包屑&ndash;&gt;-->
+            <!--<div class="breadcrumb fz-14 right">-->
+                <!--<a href="#">纸品湿巾</a>/<a href="#">纸品湿巾</a>/<a href="#">美妆</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->

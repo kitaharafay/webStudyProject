@@ -1,23 +1,32 @@
-/*通用样式*/
-body, ul, li, p, h1, h2, h3, h4, a {
-    padding: 0;
+body, ul, li, p, h1, h2, h3, h4 {
     margin: 0;
+    padding: 0;
 }
 
-body {
-    font-size: 14px;
-    font-family: 微软雅黑;
-    line-height: 20px;
+section {
+    padding: 30px 0;
 }
 
 ul {
     list-style: none;
 }
 
+li {
+    display: inline-block;
+}
+
 a {
     text-decoration: none;
-    font-size: 14px;
-    color: #333333;
+    color: #333;
+}
+
+image {
+    border: none;
+    vertical-align: middle;
+}
+
+body {
+    color: #333;
 }
 
 .center {
@@ -38,18 +47,16 @@ a {
     display: block;
     clear: both;
 }
+
+.fz-14 {
+    font-size: 14px;
+}
+
 .scale-image img {
     transform: scale(1);
     transition: all 0.5s ease-out;
 }
+
 .scale-image img:hover {
     transform: scale(1.1);
-}
-
-#footer {
-    padding: 30px 0;
-}
-#statement {
-    background-color: #414141;
-    color: #999999;
 }
