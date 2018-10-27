@@ -1,4 +1,5 @@
-body, ul, li, p, h1, h2, h3, h4 {
+/*---------- 通用样式 ----------*/
+body, ul, li, p, h1, h2, h3, h4, nav {
     margin: 0;
     padding: 0;
 }
@@ -59,4 +60,158 @@ body {
 
 .scale-image img:hover {
     transform: scale(1.1);
+}
+/*---------- header 头部 ----------*/
+#header {
+    background-color: #333333;
+    height: 36px;
+    width: 100%;
+    color: #cccccc;
+    font-size: 0;
+}
+#header a {
+    color: #cccccc;
+    font-size: 12px;
+    line-height: 36px;
+}
+#header a:hover {
+    color: #ffffff;
+}
+#header .header .menu {
+    display: inline-block;
+}
+#header .header .menu .item a{
+    padding: 0 10px;
+    border-right: 1px solid #5c5c5c;
+}
+#header .header .menu .item:first-child a,
+#header .header .menu .item:last-child a{
+    border-right: none;
+}
+#header .header .menu .item .app {
+    background: url("../images/icon-1.png") 0 3px no-repeat;
+    padding-left: 12px;
+    margin-left: 10px;
+}
+#header .header .menu .item .client-service i {
+    background: url("../images/icon-1.png") 0 -375px no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    margin-left: 10px;
+}
+#header .header .menu .item .client-service:hover i {
+    transform: rotate(180deg);
+}
+
+/*---------- subNav 子导航/吸顶式导航 ----------*/
+#subNav {
+    width: 100%;
+    height: 204px;
+    margin: 0px 0 1px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/*nav部分*/
+#subNav .nav {
+    height: 204px;
+    position: relative;
+}
+
+#subNav .nav .navCon {
+    font-size: 0;
+    padding-top: 160px;
+}
+
+#subNav .nav .navCon .item {
+    font-size: 14px;
+    padding: 0 24px;
+}
+
+#subNav .nav .navCon .item:first-child {
+    padding-left: 42px;
+}
+
+#subNav .nav .navCon .item:nth-last-of-type(2) {
+    border-left: 1px solid #999999;
+}
+
+#subNav .nav .navCon .item a {
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+#subNav .nav .navCon .item:hover a {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+/*运动部分*/
+#subNav .logo {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#subNav .search-box {
+    position: absolute;
+    top: 74px;
+    right: 20px;
+    font-size: 0;
+}
+
+#subNav .search-box .hidden-btn {
+    display: none;
+}
+
+#subNav .search-box .search-text {
+    width: 252px;
+    vertical-align: bottom;
+    border: none;
+    border-bottom: 1px solid #d8cebc;
+    outline: none;
+    text-indent: 1em;
+}
+
+#subNav .search-box .search-btn {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../images/icon-1.png") 0 -285px no-repeat;
+    cursor: pointer;
+}
+
+#subNav .search-box .search-btn:hover {
+    background: url("../images/icon-1.png") 0 -315px no-repeat;
+}
+
+#subNav .search-box .shopping-car {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../images/icon-1.png") 0 -80px no-repeat;
+    vertical-align: bottom;
+    margin: 0 20px;
+    position: relative;
+}
+
+#subNav .search-box .shopping-car:hover {
+    background: url("../images/icon-1.png") 0 -113px no-repeat;
+    vertical-align: bottom;
+}
+#subNav .search-box .shopping-car .num {
+    display: inline-block;
+    font: 12px/12px  微软雅黑;
+    color: #ffffff;
+    position: absolute;
+    background-color: #d4282d;
+    border-radius: 50%;
+    padding: 3px;
+    right: -8px;
+    top: -8px;
+    z-index: 2;
+
 }
