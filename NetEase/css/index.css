@@ -157,12 +157,14 @@
 
 #banner .carousel-inner {
     height: 420px;
+    width: 100%;
 }
 
 #banner .carouselImgCon {
     font-size: 0;
     position: absolute;
     height: 420px;
+    width: 100%;
     /*居中对齐*/
     left: 50%;
     margin-left: -960px;
