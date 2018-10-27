@@ -61,6 +61,7 @@ body {
 .scale-image img:hover {
     transform: scale(1.1);
 }
+
 /*---------- header 头部 ----------*/
 #header {
     background-color: #333333;
@@ -69,30 +70,37 @@ body {
     color: #cccccc;
     font-size: 0;
 }
+
 #header a {
     color: #cccccc;
     font-size: 12px;
     line-height: 36px;
 }
+
 #header a:hover {
     color: #ffffff;
 }
+
 #header .header .menu {
     display: inline-block;
 }
-#header .header .menu .item a{
+
+#header .header .menu .item a {
     padding: 0 10px;
     border-right: 1px solid #5c5c5c;
 }
+
 #header .header .menu .item:first-child a,
-#header .header .menu .item:last-child a{
+#header .header .menu .item:last-child a {
     border-right: none;
 }
+
 #header .header .menu .item .app {
     background: url("../images/icon-1.png") 0 3px no-repeat;
     padding-left: 12px;
     margin-left: 10px;
 }
+
 #header .header .menu .item .client-service i {
     background: url("../images/icon-1.png") 0 -375px no-repeat;
     display: inline-block;
@@ -100,6 +108,7 @@ body {
     height: 7px;
     margin-left: 10px;
 }
+
 #header .header .menu .item .client-service:hover i {
     transform: rotate(180deg);
 }
@@ -111,6 +120,7 @@ body {
     margin: 0px 0 1px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
 /*nav部分*/
 #subNav .nav {
     height: 204px;
@@ -202,9 +212,10 @@ body {
     background: url("../images/icon-1.png") 0 -113px no-repeat;
     vertical-align: bottom;
 }
+
 #subNav .search-box .shopping-car .num {
     display: inline-block;
-    font: 12px/12px  微软雅黑;
+    font: 12px/12px 微软雅黑;
     color: #ffffff;
     position: absolute;
     background-color: #d4282d;
@@ -214,4 +225,184 @@ body {
     top: -8px;
     z-index: 2;
 
+}
+
+/*---------- footer ----------*/
+#footer {
+    padding-top: 30px;
+}
+
+#footer .footer {
+    padding: 34px 0;
+}
+
+#footer .footer-content {
+    height: 205px;
+    font-size: 0;
+}
+
+#footer .footer-box {
+    width: 280px;
+    height: 205px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#footer .footer-box .caption {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+#footer .customer {
+    text-align: center;
+}
+
+#footer .customer a {
+    display: inline-block;
+    width: 80px;
+    height: 100px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 14px;
+}
+
+#footer .customer a:hover {
+    color: #b4a078;
+}
+
+#footer .customer a .img {
+    width: 32px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#footer .customer .online .img {
+    background: url("../images/icon-3.png") 0 -232px no-repeat;
+}
+
+#footer .customer .online:hover .img {
+    background: url("../images/icon-3.png") 0 -196px no-repeat;
+}
+
+#footer .customer .user .img {
+    background: url("../images/icon-3.png") 0 -98px no-repeat;
+}
+
+#footer .customer .user:hover .img {
+    background: url("../images/icon-3.png") 0 -61px no-repeat;
+}
+
+#footer .comment .address {
+    margin-top: 15px;
+    height: 32px;
+}
+
+#footer .comment .address span {
+    display: inline-block;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#footer .comment .address .qq {
+    width: 32px;
+    height: 32px;
+    background: url("../images/icon-3.png") 0 -413px no-repeat;
+    cursor: pointer;
+}
+
+#footer .comment .address .weixin {
+    width: 32px;
+    height: 32px;
+    background: url("../images/icon-3.png") 0 -371px no-repeat;
+    cursor: pointer;
+}
+
+#footer .comment .address .xinlang {
+    width: 32px;
+    height: 32px;
+    background: url("../images/icon-3.png") 0 -268px no-repeat;
+    cursor: pointer;
+}
+
+#footer .download {
+    text-align: center;
+}
+
+#footer .download .app {
+    width: 104px;
+    height: 104px;
+    display: inline-block;
+    background: url("../images/bg/2weima.png") no-repeat;
+}
+
+#footer .download .content {
+    color: #b4a078;
+}
+
+#footer .comment {
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+}
+
+/*--*/
+#footer .declare {
+    background: #414141;
+    font-size: 0;
+}
+#footer .declare-content {
+    padding: 36px 0;
+    border-bottom: 1px solid #4f4f4f;
+}
+#footer .declare-content .box {
+    color: #ffffff;
+    height: 51px;
+    width: 363px;
+    display: inline-block;
+    line-height: 51px;
+    text-align: center;
+}
+
+#footer .declare-content .box span {
+    vertical-align: middle;
+}
+
+#footer .declare-content .box .content {
+    font-size: 16px;
+}
+
+#footer .declare-content .box .img {
+    width: 51px;
+    height: 51px;
+    display: inline-block;
+    margin-right: 17px;
+}
+
+#footer .declare-content .box:nth-child(1) .img {
+    background: url("../images/ico_08.gif") no-repeat;
+}
+
+#footer .declare-content .box:nth-child(2) .img {
+    background: url("../images/ico_09.gif") no-repeat;
+}
+
+#footer .declare-content .box:nth-child(3) .img {
+    background: url("../images/ico_10.gif") no-repeat;
+}
+
+#footer .declare .comment-content {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    padding: 31px 0 26px 0;
+}
+#footer .declare .comment-content .address a {
+    margin: 0 15px;
+    color: #999999;
 }

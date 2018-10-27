@@ -149,6 +149,7 @@
 #banner {
     padding-top: 0;
 }
+
 #banner .carousel {
     position: relative;
     height: 420px;
@@ -187,9 +188,11 @@
     cursor: pointer;
     z-index: 2;
 }
+
 #banner .btn-prev {
     left: 15%;
 }
+
 #banner .btn-next {
     right: 15%;
 }
@@ -490,6 +493,7 @@
     border-bottom: 1px solid #f4f0ea;
     position: relative;
 }
+
 #show .box-sm > div:first-child > .tag {
     display: inline-block;
     padding: 0 5px;
@@ -567,11 +571,12 @@
     font-size: 12px;
     text-decoration: line-through;
 }
+
 #show .box-sm .caption a {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    display:block;
+    display: block;
     margin: 0 10px;
 }
 
@@ -975,9 +980,11 @@
     overflow: hidden;
     background-color: #f4f4f4;
 }
-.common-state .img-box p{
+
+.common-state .img-box p {
     font-size: 14px;
 }
+
 .common-state .img-box .caption {
     padding-top: 35px;
 }
@@ -1001,4 +1008,75 @@
 .common-state .img-box .price > span:nth-of-type(2) {
     color: #999999;
     text-decoration: line-through;
+}
+
+/*---------- says ----------*/
+#says {
+    background-color: #f4f0ea;
+}
+
+#says .carousel-inner {
+    overflow: hidden;
+    height: 492px;
+    width: 1090px;
+}
+
+#says .carouselImgCon {
+    width: 1200px;
+}
+
+#says .item {
+    width: 355px;
+    height: 492px;
+    margin-right: 10px;
+    padding: 1px;
+    background: #ffffff;
+    position: relative;
+}
+#says .item .image-box {
+    overflow: hidden;
+    width: 355px;
+    height: 355px;
+}
+#says .item .comment {
+    width: 315px;
+    height: 155px;
+    background-color: #ffffff;
+    z-index: 2;
+    text-align: left;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    top: 306px;
+    padding: 15px;
+}
+#says .comment .user-info {
+    color: #999999;
+    padding-bottom: 12px;
+}
+#says .comment .user-info .name {
+    margin-right: 10px;
+}
+#says .comment .goods {
+    margin-bottom: 28px;
+}
+#says .comment .goods .name {
+    font-weight: bold;
+    width: 166px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 23px;
+    vertical-align: bottom;
+    margin-right: 106px;
+}
+#says .comment .goods .price {
+    display: inline-block;
+    line-height: 23px;
+    vertical-align: bottom;
+    color: #b4a078;
+}
+#says .comment .content {
+    height: 40px;
 }
