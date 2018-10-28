@@ -1,4 +1,4 @@
-var dataTop = {
+var queryTop = {
     "code": "200",
     "data": {
         "environment": "online",

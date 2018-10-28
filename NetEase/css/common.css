@@ -112,6 +112,47 @@ body {
 #header .header .menu .item .client-service:hover i {
     transform: rotate(180deg);
 }
+/*app hover弹出效果*/
+#header .header .menu .item:last-child {
+    position: relative;
+}
+#header .header .menu .item:last-child .download {
+    display: none;
+    position: absolute;
+    left: -35px;
+    top: 33px;
+}
+#header .header .menu .item:last-child:hover .download {
+    display: block;
+    padding: 10px 5px;
+    width: 130px;
+    background: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 3;
+    border-radius: 1px;
+}
+#header .header .menu .item:last-child .download img {
+    width: 104px;
+    height: 104px;
+    padding-bottom: 10px;
+}
+#header .header .menu .item:last-child .download p{
+    font-size: 12px;
+    color: #b4a078;
+}
+#header .header .menu .item:last-child .download:before {
+    width: 10px;
+    height: 6px;
+    content: '';
+    display: block;
+    background: url("../images/ico_02.png");
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -6px;
+}
 
 /*---------- subNav 子导航/吸顶式导航 ----------*/
 #subNav {
@@ -135,6 +176,7 @@ body {
 #subNav .nav .navCon .item {
     font-size: 14px;
     padding: 0 24px;
+    position: relative;
 }
 
 #subNav .nav .navCon .item:first-child {
@@ -153,6 +195,56 @@ body {
 #subNav .nav .navCon .item:hover a {
     color: #b4a078;
     border-bottom: 3px solid #b4a078;
+}
+#subNav .nav .navCon .item:hover  .subMenu {
+    display: block;
+}
+
+#subNav .nav .navCon .subMenu{
+    position: absolute;
+    background: #ffffff;
+    z-index: 5;
+    left: -100px;
+    top: 36px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+#subNav .nav .navCon .subMenu:before {
+    width: 10px;
+    height: 6px;
+    content: '';
+    display: block;
+    background: url("../images/ico_02.png");
+    position: absolute;
+    left: 133px;
+    top: -6px;
+}
+#subNav .nav .navCon .subMenu .dropMenu {
+    width: 696px;
+    padding: 20px 23px;
+}
+#subNav .nav .navCon .subMenu .dropMenuItem {
+    width: 140px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 17px;
+}
+#subNav .nav .navCon .subMenu .dropMenuItem .caption {
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 15px;
+    line-height: 36px;
+    font-size: 16px;
+}
+#subNav .nav .navCon .subMenu .dropMenuItem img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+#subNav .nav .navCon .subMenu .dropMenuItem .image-box .name {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
 }
 
 /*运动部分*/

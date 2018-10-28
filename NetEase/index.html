@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
+    <!-- 网易严选 -->
     <meta charset="UTF-8">
     <title>NetEase</title>
     <link rel="stylesheet" href="css/common.css">
@@ -19,8 +20,24 @@
             <li class="item"><a href="#">会员</a></li>
             <li class="item"><a href="#">甄选家</a></li>
             <li class="item"><a href="#">企业采购</a></li>
-            <li class="item"><a href="#" class="client-service">客户服务<i></i></a></li>
-            <li class="item"><a href="#" class="app">APP</a></li>
+            <li class="item">
+                <a href="#" class="client-service">客户服务<i></i></a>
+                <!--弹出子菜单 2018.10.28-->
+                <ul class="subMenu" style="display: none">
+                    <li class="subMenuItem"><a href="#">在线客服</a></li>
+                    <li class="subMenuItem"><a href="#">帮助中心</a></li>
+                    <li class="subMenuItem"><a href="#">商务合作</a></li>
+                    <li class="subMenuItem"><a href="#">开放平台</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#" class="app">APP</a>
+                <!--弹出下载APP所需的二维码及其他信息 2018.10.28-->
+                <div class="download">
+                    <img src="images/bg/2weima.png">
+                    <p>下载领1000元新人礼包</p>
+                </div>
+            </li>
         </ul>
     </div>
 </header>
@@ -37,7 +54,20 @@
         </div>
         <ul class="navCon">
             <li class="item active"><a href="#">首页</a></li>
-            <li class="item"><a href="#">居家</a></li>
+            <li class="item">
+                <a href="#">居家</a>
+                <!-- *********** 子菜单选项 *********** 2018.10.28 -->
+                <div class="subMenu" id="subMenu">
+                    <ul class="dropMenu">
+                        <li class="dropMenuItem" v-for="live in lives">
+                            <h3 class="caption">{{ live.name }}</h3>
+                            <div class="image-box" v-for="subItem in live.categoryList">
+                                <img v-bind:src="subItem.bannerUrl"><span class="name">{{ subItem.name }}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="item"><a href="#">鞋包配饰</a></li>
             <li class="item"><a href="#">服装</a></li>
             <li class="item"><a href="#">电器</a></li>
@@ -623,6 +653,7 @@
     </div>
 </section>
 
+<!-- **************** 通用头部标题部分结构 [common-header] **************** -->
 <!--<section>-->
 <!--<div class="center">-->
 <!--<div class="common-header clear-fix">-->
@@ -663,8 +694,10 @@
                             </a>
                         </div>
                         <div class="comment">
-                            <p class="user-info"><span class="name">那****孩</span><span class="time">2018-10-16 15:34</span></p>
-                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span></p>
+                            <p class="user-info"><span class="name">那****孩</span><span
+                                    class="time">2018-10-16 15:34</span></p>
+                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span>
+                            </p>
                             <p class="content">很实用的一款锅，用起来也很方便，手柄舒服，两边可以倒汤。</p>
                         </div>
                     </li>
@@ -675,8 +708,10 @@
                             </a>
                         </div>
                         <div class="comment">
-                            <p class="user-info"><span class="name">那****孩</span><span class="time">2018-10-16 15:34</span></p>
-                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span></p>
+                            <p class="user-info"><span class="name">那****孩</span><span
+                                    class="time">2018-10-16 15:34</span></p>
+                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span>
+                            </p>
                             <p class="content">很实用的一款锅，用起来也很方便，手柄舒服，两边可以倒汤。</p>
                         </div>
                     </li>
@@ -687,8 +722,10 @@
                             </a>
                         </div>
                         <div class="comment">
-                            <p class="user-info"><span class="name">那****孩</span><span class="time">2018-10-16 15:34</span></p>
-                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span></p>
+                            <p class="user-info"><span class="name">那****孩</span><span
+                                    class="time">2018-10-16 15:34</span></p>
+                            <p class="goods"><span class="name">瑞典TGC 香氛凝脂沐浴露 限量版</span><span class="price">¥229</span>
+                            </p>
                             <p class="content">很实用的一款锅，用起来也很方便，手柄舒服，两边可以倒汤。</p>
                         </div>
                     </li>
@@ -704,13 +741,16 @@
         <div class="footer-content center">
             <div class="customer footer-box">
                 <p class="caption">客户服务</p>
-                <a class="online"><span class="img"></span><p>在线客服</p></a>
-                <a class="user"><span class="img"></span><p>用户反馈</p></a>
+                <a class="online"><span class="img"></span>
+                    <p>在线客服</p></a>
+                <a class="user"><span class="img"></span>
+                    <p>用户反馈</p></a>
             </div>
             <div class="comment footer-box">
                 <p class="caption">何为严选</p>
                 <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
-                <div class="address"><span>关注我们：</span><span class="qq"></span><span class="weixin"></span><span class="xinlang"></span></div>
+                <div class="address"><span>关注我们：</span><span class="qq"></span><span class="weixin"></span><span
+                        class="xinlang"></span></div>
             </div>
             <div class="download footer-box">
                 <p class="caption">扫码下载APP</p>
@@ -735,11 +775,27 @@
             </div>
         </div>
         <div class="comment-content">
-            <p class="address"><a href="#">关于我们</a>|<a href="#">帮助中心</a>|<a href="#">售后服务</a>|<a href="#">配送与验收</a>|<a href="#">商务合作</a>|<a href="#">企业采购</a>|<a href="#">开放平台</a>|<a href="#">搜索推荐</a>|<a href="#">友情链接</a></p>
-            <p>网易公司版权所有 © 1997-2018   食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</p>
+            <p class="address"><a href="#">关于我们</a>|<a href="#">帮助中心</a>|<a href="#">售后服务</a>|<a href="#">配送与验收</a>|<a
+                    href="#">商务合作</a>|<a href="#">企业采购</a>|<a href="#">开放平台</a>|<a href="#">搜索推荐</a>|<a
+                    href="#">友情链接</a></p>
+            <p>网易公司版权所有 © 1997-2018 食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</p>
         </div>
     </div>
 </footer>
 
+<!--侧边栏 2018.10.28-->
+<div></div>
+
+<!-- ----------[javascript]---------- 2018.10.28 -->
+<script src="../library/jquery-3.1.0.js"></script>
+<script src="../library/vue.js"></script>
+<!-- ****** data [import] ****** -->
+<script src="js/data/queryTop.js"></script>
+<!-- data [import] -->
+<script src="js/index.js"></script>
+<script>
+
+</script>
+<!--javascript-->
 </body>
 </html>

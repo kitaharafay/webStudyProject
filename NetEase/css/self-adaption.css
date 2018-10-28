@@ -1,3 +1,8 @@
+/*这里主要解决一个问题，当页面宽度少于1210px（默认center指定1090px）时，
+右侧页面会出现一个空白，并且bannerPIC由于居中设置而导致显示错误,所以在页面
+宽度不足时，将body的值设置固定值*/
+
+/* 2018.10.28 */
 @media screen and (max-width: 1210px) {
     body {
         width: 1210px;
